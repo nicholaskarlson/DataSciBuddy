@@ -2,12 +2,15 @@ from setuptools import setup, find_packages
 
 setup(
     name="DataSciBuddy",
-    version="0.1",
+    version="0.2",
     packages=find_packages(),
     install_requires=[
         'numpy',
         'pandas'
     ],
+    package_data={
+        'DataSciBuddy': ['datasets/*.csv'],
+    },
     author="Nicholas Karlson",
     author_email="NicholasKarlson@gmail.com",
     description="A data science helper package with datasets and utilities.",
